@@ -20,7 +20,7 @@ const ApartmentDetailsPage = () => {
 
   const fetchApartmentDetails = async () => {
     try {
-      const response = await fetch(`/apartments/${id}`);
+      const response = await fetch(`http://localhost:3000/apartments/${id}`);
       const data = await response.json();
       setApartment(data);
     } catch (error) {
