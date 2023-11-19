@@ -37,6 +37,10 @@ const HomePage = () => {
     }
   };
 
+  useEffect(() => {
+    fetchApartments();
+  }, []);
+
   return (
     <div className="home-page">
       <h1 className="heading">Welcome to the Apartment App</h1>
